@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uYMshNpzBe2d4qt9Fv+5PhyNDZnJKoVc8KYKlVcCSY7WSktnwt+F6c7C2drPdLjmwqTsfPvHbngMwxmpo9jfCQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Elayne\\Desktop\\ExportCsv\\Colunas dinamicas\\worker\\worker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elayne\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
+    "C:\\Users\\Elayne\\.nuget\\packages\\csvhelper\\15.0.0\\csvhelper.15.0.0.nupkg.sha512",
+    "C:\\Users\\Elayne\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
