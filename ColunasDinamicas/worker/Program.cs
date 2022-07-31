@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using CsvHelper;
+using Mapping;
 using Model;
 using Seed;
 
@@ -12,13 +13,13 @@ class Program
             using (var streamWriter = new StreamWriter("workerFile.csv"))
             using (var csvWriter = new CsvWriter(streamWriter, new CultureInfo("pt-BR", true)))
             {
-                var keys = GetKeys();
-                FillColumnName(csvWriter, keys);
+                FillColumnName(csvWriter, GetKeys());
 
                 csvWriter.Configuration.HasHeaderRecord = false;
                 csvWriter.Configuration.RegisterClassMap(new WorkerModelMap(GetKeys()));
 
-                csvWriter.WriteRecords(WorkerMock.ObterWorkers());
+                var records = new WorkerModel(StatusMock.GetStatusFound());
+                csvWriter.WriteRecords(records.MountWorkerModel());
             }
         }
         catch (Exception ex)
@@ -44,7 +45,14 @@ class Program
 
     public static List<string> GetKeys()
     {
-        var firstWorker = WorkerMock.ObterWorkers().First();
-        return firstWorker.CustomerField.Keys.ToList();
+        var list = new List<string>();
+        
+        foreach(var status in StatusMock.GetAllStatus())
+        {
+            list.Add(status.Description);
+            list.Add(String.Concat(status.Description, "(%)"));
+        }
+
+        return list;
     }
 }

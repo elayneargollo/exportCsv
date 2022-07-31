@@ -29,7 +29,6 @@ C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\bin\Debug\net
 C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\bin\Debug\net6.0\worker.runtimeconfig.json
 C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\bin\Debug\net6.0\worker.dll
 C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\bin\Debug\net6.0\worker.pdb
-C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\bin\Debug\net6.0\Bogus.dll
 C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\bin\Debug\net6.0\CsvHelper.dll
 C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\obj\Debug\net6.0\worker.csproj.CopyComplete
 C:\Users\Elayne\Documents\Github\exportCsv\ColunasDinamicas\worker\obj\Debug\net6.0\worker.genruntimeconfig.cache
