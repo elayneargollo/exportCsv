@@ -156,11 +156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Elayne\\Desktop\\ExportCsv\\Colunas dinamicas\\worker\\worker.csproj",
+      "projectUniqueName": "C:\\Users\\Elayne\\Documents\\Github\\exportCsv\\ColunasDinamicas\\worker\\worker.csproj",
       "projectName": "worker",
-      "projectPath": "c:\\Users\\Elayne\\Desktop\\ExportCsv\\Colunas dinamicas\\worker\\worker.csproj",
+      "projectPath": "C:\\Users\\Elayne\\Documents\\Github\\exportCsv\\ColunasDinamicas\\worker\\worker.csproj",
       "packagesPath": "C:\\Users\\Elayne\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Elayne\\Desktop\\ExportCsv\\Colunas dinamicas\\worker\\obj\\",
+      "outputPath": "C:\\Users\\Elayne\\Documents\\Github\\exportCsv\\ColunasDinamicas\\worker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

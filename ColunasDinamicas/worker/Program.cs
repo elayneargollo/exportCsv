@@ -1,40 +1,45 @@
 ﻿using System.Globalization;
 using CsvHelper;
+using Model;
 using Seed;
 
 class Program
 {
     static void Main(string[] args)
     {
-        using (var streamWriter = new StreamWriter("worker.csv"))
-
-        using (var csvWriter = new CsvWriter(streamWriter, new CultureInfo("pt-BR", true)))
+        try 
         {
-            var keys = GetKeys();
-            FillColumnName(csvWriter, keys);
-
-            foreach( var item in WorkerMock.ObterWorkers())
+            using (var streamWriter = new StreamWriter("workerFile.csv"))
+            using (var csvWriter = new CsvWriter(streamWriter, new CultureInfo("pt-BR", true)))
             {
-                csvWriter.WriteField(item.Period);
-                var dict = item.CustomerField;
+                var keys = GetKeys();
+                FillColumnName(csvWriter, keys);
 
-                foreach (var key in keys)
-                {
-                    csvWriter.WriteField(dict[key]);
-                }
-                csvWriter.NextRecord();
+                csvWriter.Configuration.HasHeaderRecord = false;
+                csvWriter.Configuration.RegisterClassMap(new WorkerModelMap(GetKeys()));
+
+                csvWriter.WriteRecords(WorkerMock.ObterWorkers());
             }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("An error occurred whilst performing the export: " + ex.Message);
         }
     }
 
     public static void FillColumnName(CsvWriter csvWriter, List<string> keys)
     {
-        var headers = new []{ "Month/Year"}.Concat(keys).ToList();
+        try 
+        {
+            var headers = new []{ "Month/Year"}.Concat(keys).ToList();
 
-        foreach(var header in headers)
-            csvWriter.WriteField(header);
-
-        csvWriter.NextRecord();
+            headers.ForEach(header => csvWriter.WriteField(header));
+            csvWriter.NextRecord();
+        }
+        catch 
+        {
+            throw;
+        }
     }
 
     public static List<string> GetKeys()

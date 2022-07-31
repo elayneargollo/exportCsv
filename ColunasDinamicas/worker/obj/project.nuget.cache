@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uYMshNpzBe2d4qt9Fv+5PhyNDZnJKoVc8KYKlVcCSY7WSktnwt+F6c7C2drPdLjmwqTsfPvHbngMwxmpo9jfCQ==",
+  "dgSpecHash": "FE8qJTcmyo3517eMZFTIJ6DqSg7UAdiz3k3sC+I27hGzDpuU6trjtQ8JndasxUZAbCJYfLYqxIdNOSqPIcINCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elayne\\Desktop\\ExportCsv\\Colunas dinamicas\\worker\\worker.csproj",
+  "projectFilePath": "C:\\Users\\Elayne\\Documents\\Github\\exportCsv\\ColunasDinamicas\\worker\\worker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elayne\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Elayne\\.nuget\\packages\\csvhelper\\15.0.0\\csvhelper.15.0.0.nupkg.sha512",
